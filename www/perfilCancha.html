@@ -1,0 +1,120 @@
+<div class="pages">
+  <div data-page="perfilCancha" class="page">
+   <div class="page-content" style="background: url(img/principal.jpeg)no-repeat fixed center center; background-size: cover;">
+    <div class="navbar">
+      <div class="left">
+        <a href="#" class="link open-panel">
+          <i class="material-icons">menu</i>         
+        </a>
+        <span style="width: 45%;margin-left: 3%;">Vamo' a Jugar</span>
+        <a href="#" class="link">
+          <i class="material-icons">chat</i>
+        </a>
+        <a href="#" class="link">
+          <i class="material-icons">notifications</i>
+        </a>
+      </div>
+    </div>
+    <div class="content-block" style="margin-top: 0;padding: 0;">
+     <div  style="height: 120px;   background:#4caf50; margin-top:0px; " >
+      <h2 style="margin-left: 120px;margin-top: 10px; color: white; position:absolute;" id="nombreCanchaPerfil"></h2>
+      <h3 style="margin-left: 80%;margin-top: 50px; color: white; position:absolute;" id="tipoCanchaPerfil"></h3>
+      <h3 style="margin-left: 43%;margin-top: 50px; color: white; position:absolute;">Calificación </h3>
+      <div id="calificacionCanchaPerfil" style="margin-left: 160px; margin-top: 75px; position: absolute;">
+        
+      </div>
+      <img src="" style="height: 12%;margin-left: 1%; margin-top:40px; position:absolute; " id="fotoCanchaPerfil"> 
+
+    </div>
+
+
+
+    <div class="block" >
+      <div class="row">
+        <button class="button-l" style="border:2px solid black; background:white; color:black; width: 50%;">Información</button>
+        <button class="button-l" style="border:2px solid black; background:white; color:black; width: 50%;">Fotos</button>
+      </div>
+    </div>
+
+      <div class="block" >
+        <div class="row">
+          <h4 style="display: block; margin: auto; margin-top: 20px"> Filtrar </h4>
+        </div>
+      </div>
+    <div class="block">
+      <div class="row">
+        <table style="margin-right: 5%;">          
+          <tr class="input-cell" style="text-align: center;position: absolute;">
+            <td style="width: 40%;">
+              <div class="input input-dropdown">
+                <select>
+                  <option selected hidden>Tipo Cancha</option>
+                  <option value="5">5-5</option>
+                  <option value="8">8-8</option>
+                  <option value="9">9-9</option>
+                </select>
+              </div>
+            </td>
+            <td style="width: 40%;">
+              <div class="input input-dropdown">
+                <select>
+                  <option selected hidden>Fecha</option>
+                  <option value="Lunes">Lunes</option>
+                  <option value="Martes">Martes</option>
+                  <option value="Miercoles">Miercoles</option>
+                  <option value="Jueves">Jueves</option>
+                  <option value="Viernes">Viernes</option>
+                  <option value="Sabado">Sabado</option>
+                  <option value="Domingo">Domingo</option>
+                </select>
+              </div>
+            </td>
+            <td style="width: 20%;">
+              <a class="button col" id="filtrarHorariosCancha">Buscar</a>
+            </td>
+          </tr>
+        </table>
+        </div>
+      </div>
+      <br><br>
+      <div class="block" >
+        <div class="row">
+          <h4 style="display: block; margin: auto; margin-top: 20px"> Horarios Disponible </h4>
+
+        </div>
+      </div>
+
+
+
+      <div class="data-table data-table-init card">
+        <table>
+          <thead>
+            <tr>
+              <th class="label-cell"style="width:25%; background: white;" >Fecha</th>
+              <th class="label-cell"style="width:25%; background: white;" >Hora</th>
+              <th class="numeric-cell"style="width:80%; background: white;"  >Precio</th>
+              <th class="numeric-cell"style="width:25%; background: white;" >Estado</th>
+            </tr>
+          </thead>
+
+          <tbody id="cuerpoTablaHorarios">
+            
+          </tbody>
+        </table>      
+      </div> 
+      
+    </div> 
+
+    <div class="toolbar toolbar-bottom-md">
+      <div class="toolbar-inner">
+        <a href="inicio.html" class="link"><img src="img/home.png" style="width:35px;"></a>
+        <a href="buscar.html" class="link"><img src="img/search.png" style="width:35px;"></a>
+        <a href="#" class="link"><img src="img/logoapp.png" style="width:60px;"></a>
+        <a href="menuCanchas.html" class="link"><img src="img/balon.png" style="width:35px;"></a>
+        <a href="miperfil.html" class="link"><img src="img/person.png" style="width:35px;"></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

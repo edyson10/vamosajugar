@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src * 'unsafe-inline'; media-src *">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <title>Vamo a Jugar</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.min.css">
+    <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div id ="cover">  <img id= "splash" src="img/logoapp.png">  </div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <div style="height:20%; width: 100%;">
+                <img src="img/user.png" style="width:30%;position: absolute; margin-top: 10%;">
+                <img src="img/balonne.png" style="width:10%;  position:absolute; margin-left: 20%; position: absolute; margin-top: 30%;">
+                <h3 style="margin-left: 30%; position: absolute;width: 60%;  margin-top: 13%;text-align: center;" id="nombrePanel"></h3>
+            </div>
+            <div">
+                <h3 style="margin-left:30%;margin-top: 80%; color: white; position:absolute; color:black;">Puntaje</h3>
+                <i class="material-icons"style=" margin-left: 20%; margin-top: 80%; position: absolute; color:black;">star_half</i>
+                <h3 style="margin-left:20%;margin-top: 90%; color: white; position:absolute; color:black;">Mis Reservas(0)</h3>
+                <i class="material-icons"style=" margin-left: 10%; margin-top: 90%; position: absolute; color:black;">today</i>
+                <h3 style="margin-left:15%;margin-top: 100%; color: white; position:absolute; color:black;">Canchas Favoritas</h3>
+                <i class="material-icons"style=" margin-left: 5%; margin-top: 100%; position: absolute; color:black;">star_border</i>
+                <h3 style="margin-left:30%;margin-top: 110%; color: white; position:absolute; color:black;">Regalo</h3>
+                <i class="material-icons"style=" margin-left: 20%; margin-top: 110%; position: absolute; color:black;">redeem</i> 
+            </div>
+            <div style="position: fixed; bottom: 0;font-size: 20px;width: 100%;text-align: center;">                
+            <hr style="width: 100%; background: gray; border: 1px solid grey; margin: 0;padding: 0;">
+                <div class="row">
+                    <a href="" style="color: black;width: 80%;padding: 3%;"><i class="material-icons"style="color:black;">edit</i> Editar Perfil</a>
+                </div>
+                <div class="row">
+                    <a href="" style="color: black;width: 80%;padding: 3%;"><i class="material-icons"style="color:black;">question_answer</i> Contáctanos</a>
+                </div>
+                <div class="row">
+                    <a href="" style="color: black;width: 80%;padding: 3%;"><i class="material-icons"style="color:black;">feedback</i> Información</a>
+                </div>
+                <div class="row">
+                    <a id="botonCerrarSesion" style="color: black;width: 80%;padding: 3%;"><i class="material-icons"style="color:black;">power_settings_new</i> Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+ <!-- Views --> 
+    <div class="views">
+        <div class="view view-main">
+
+        <div class="pages navbar-through toolbar-through">
+            <div data-page="index" class="page">
+                <div class="page-content" style="background: url('img/principal.png') no-repeat fixed center center; background-size:cover;">
+                    <div class="content-block"><img src="img/logoappFull.png" style="width:50%;display:block;margin:auto;margin-top:10%;margin-bottom:25px;">
+                        <div class="block">
+                            <div class="row">
+                                <a class="button col buttonPrincipal" href="vistas.html" id="vistas" style="background:#3b5998;color:white;"><p><span><img src="img/fb.png"></span> Continuar con Facebook</p></a>
+                                <a class="button col buttonPrincipal" href="registro.html" style="margin-top:5%;text-align: center;"><p style="color: black;">Crear Cuenta</p></a>
+                            </div>
+                            <br><br><br><br><br>
+                            <div class="block">
+                                <div class="row">
+                                    <h3 style="color: white;">¿ Ya tienes una cuenta ?</h3>
+                                    <a href="iniciarsesion.html" class="button col buttonPrincipal" style="margin-top: 5%;background:#357E38;color:white;"><p>Iniciar Sesión</p></a>
+                                </div>
+                            </div>
+                        </div>  
+                        <div>
+                            <p style="font-size: 13px;text-align:center;color:white;">&#169; 2018 Vamo' a Jugar | Todos los derechos reservados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lib/framework7/js/framework7.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/alertas.js"></script>
+</body>
+
+</html>
